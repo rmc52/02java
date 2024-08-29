@@ -1,0 +1,8 @@
+package edu.kh.variable.ex2;
+
+public class ScannerExample {
+public static void main(String[] args) {
+	
+	// scanner : 프로그램실행중 키보드 입력을받을수있게하는 역할
+}
+}

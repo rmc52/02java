@@ -1,0 +1,41 @@
+package edu.kh.op.ex;
+
+public class OpExample { // 예제 코드 작성용 클래스, 여기에 기능(메서드)만듦
+
+	
+	// ex() method : 객체 지향 프로그래밍에서 OpExample 객체와 관련된 함수
+	// -> opexample이 가지고있는 기능중 ex1()이라는 기능.
+	public void ex1() {
+		// 증감 연산자 : ++ , -- 
+		
+		int iNum1 = 10;
+		int iNum2 = 10;
+		
+		
+		// ?
+		
+		iNum1 ++;
+		iNum2 --;
+		
+		
+		
+		System.out.println("iNum1 : " + iNum1); // 11
+		System.out.println("iNum2 : " + iNum2); // 9
+		
+		// 전위연산
+		int temp1 = 5;
+		
+		System.out.println(++temp1 + 5);
+		
+		
+		//후위연산
+		
+		
+		
+		
+		
+	}
+	
+	
+
+}
