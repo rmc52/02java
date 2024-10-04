@@ -7,12 +7,12 @@ public class BranchExample {
 	public void ex1() {
 		
 		// 1부터 10까지 1씩 증가하며 출력하는 반복문 작성
-		// 단, 5를 출력하면 ★반복문 종료
+		// 단, 5를 출력하면 반복문 종료
 		// 1 2 3 4 5
 		
 		for(int i = 1; i <= 10; i++) {
 			
-			System.out.print(i + " "); // ★반복문 결과들 가로로 나열할때
+			System.out.print(i + " ");
 			
 			if(i == 5) {
 				break;
@@ -39,8 +39,6 @@ public class BranchExample {
 			
 			// next()     : 다음 한 단어 (띄어쓰기 포함 X)
 			// nextLine() : 다음 한 줄 (띄어쓰기 포함 O)
-			// 중간에 한번 \n 비워주기
-			
 			
 			// 자바에서 문자열(String) 비교는 == 연산자 사용 불가!
 			// 비교연산자(==)는 보통 기본자료형끼리의 연산에서만 사용 가능함.

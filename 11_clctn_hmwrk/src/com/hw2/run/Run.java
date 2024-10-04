@@ -1,5 +1,7 @@
 package com.hw2.run;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import com.hw2.model.dto.Animal;
@@ -16,16 +18,20 @@ public static void main(String[] args) {
 	
 	
 	
-	Tiger tiger = new Tiger("호랑이");
-	
-	Animal animal1 = tiger;
-	
-	Monkey monkey = new Monkey("원숭이");
-	Animal animal2 = monkey;
+	Animal tiger = new Tiger("호랑이");
 	
 	
-	zoo.addAnimal(tiger);
-	zoo.addAnimal(monkey);
+	Animal monkey = new Monkey("원숭이");
+	
+	
+	List<Animal> animals = new ArrayList<Animal>();
+	
+	animals.add(monkey);
+	animals.add(tiger);
+	
+	
+	
+	
 	
 	System.out.println(zoo);
 	
@@ -44,6 +50,9 @@ public static void main(String[] args) {
 			System.out.println("울음소리");
 			System.out.println(tiger);
 			System.out.println(monkey);
+//			((Monkey) animals).sound();
+			System.out.println(animals);
+			System.out.println();
 			
 		} else if (i == 2) {
 			

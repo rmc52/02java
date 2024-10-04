@@ -2,34 +2,41 @@ package edu.kh.poly.ex2.model.dto;
 
 public class Fish extends Animal{
 
-public Fish() {
-	// TODO Auto-generated constructor stub
-}
+	public Fish() {}
+	
+	public Fish(String type, String eatType) {
+		super(type, eatType);
+	}
 
+	// alt + shift + s -> Override/implements method... -> OK
+	@Override
+	public void eat() {
+		System.out.println("입을 뻐끔거리며 먹는다..");
+		
+	}
 
+	@Override
+	public void breath() {
+		System.out.println("아가미 호흡을 한다");
+		
+	}
 
-public Fish(String type, String eatType) {
-	super(type, eatType);
-}
-
-
-
-@Override 
-public void eat() {
-	System.out.println("ddd");
-}
-
-@Override
-public void breath() {
-	// TODO Auto-generated method stub
-	super.breath();
-}
-
-@Override
-public void move() {
-	// TODO Auto-generated method stub
-	super.move();
-}
-
-
+	@Override
+	public void move() {
+		System.out.println("꼬리로 헤엄치며 움직인다");
+		
+	}
+	
+	@Override
+	public String toString() {
+		return "Fish : " + super.toString();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }

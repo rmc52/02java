@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.hw2.model.dto.Animal;
+import com.hw2.model.dto.Monkey;
+import com.hw2.model.dto.Tiger;
 
 public class Zoo {
 
@@ -13,16 +15,19 @@ public class Zoo {
 	
 	
 	
+
 	
 	
-
-
 	public Zoo() {
 		// TODO Auto-generated constructor stub
+		
+		
+		
+		
 	}
 	
 	public Zoo(List<Animal> animals) {
-		super();
+	
 		this.animals = animals;
 	}
 	

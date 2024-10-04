@@ -1,7 +1,7 @@
 package edu.kh.oop.abstraction.model.vo;
 
 // model - 프로그램 로직과 관련되어있는 데이터를 저장하는 용도, 전부 model
-// VO (Value Object) : '값 저장용 객체'를 만들기 위한 클래스를 모아두는 패키지
+// VO (Value Object) : 값 저장용 객체를 만들기 위한 클래스를 모아두는 패키지
 public class People { // 국민(사람) 클래스
 
 	// 클래스란 ? 객체의 특성(속성, 기능)을 정의한 것
@@ -30,6 +30,7 @@ public class People { // 국민(사람) 클래스
 	private String address;
 	private String phone; // "010-1234-1234"
 	private int age;
+	private int amount;
 	//public double bitcoin; // 공통점이 아니므로 제거
 	
 	
@@ -58,7 +59,7 @@ public class People { // 국민(사람) 클래스
 	public void setName(String name) {
 		// 매개변수 String name
 		// -> String 타입의 데이터를 전달받아 저장하고 있는 변수
-		// ** this : 현재 객체 (p1, mihyun)
+		// ** this : 현재 객체
 		this.name = name;
 	}
 
@@ -115,11 +116,14 @@ public class People { // 국민(사람) 클래스
 
 
 	public void setAge(int age) {
-		this.age = age;
+		if (age >= 0) {
+	        this.age = age;
+	    } else {
+	        throw new IllegalArgumentException("음수는 안된다..");
+	    }
 	}
-	
-	
-	
+
+
 	
 	
 	

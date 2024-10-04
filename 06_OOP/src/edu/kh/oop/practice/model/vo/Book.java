@@ -14,7 +14,6 @@ public class Book {
 
 	// 매개변수생성자 
 	// alt + shift + s -> Generate Constructor using Fields.. -> generate
-	// 세터로 변경예정인 메서드
 	public Book(String title, int price, double discountRate, String author) {
 		this.title = title;
 		this.price = price;
@@ -33,9 +32,6 @@ public class Book {
 		this.title = title;
 	}
 
-	
-	
-	
 	public int getPrice() {
 		return price;
 	}
@@ -44,8 +40,6 @@ public class Book {
 		this.price = price;
 	}
 
-	
-	
 	public double getDiscountRate() {
 		return discountRate;
 	}
@@ -53,8 +47,6 @@ public class Book {
 	public void setDiscountRate(double discountRate) {
 		this.discountRate = discountRate;
 	}
-	
-	
 
 	public String getAuthor() {
 		return author;
@@ -76,11 +68,11 @@ public class Book {
 	 *  현실 객체 :
 		객체 지향 언어 : 
 		자바 객체 : 
-		class : 묶음
-		new 연산자 : heap에 객체생성
-		추상화 : 필드값
-		캡슐화 : private
-		캡슐화 원칙 : 
+		class : 
+		new 연산자 : 
+		추상화 : 
+		캡슐화 : 
+		캡슐화 원칙 :
 		메서드/기능의 '정의'란 : 
 		메서드의 '호출' 이란 :
 		return : 
